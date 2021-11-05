@@ -248,3 +248,24 @@ wynik=False x=1 y=3 z=4                d
 wynik=False x=1 y=4 z=4                e
 --------------------------------------
 wynik=False x=1 y=4 z=5                f
+
+
+Zad 3.0 
+  
+using System;
+
+public class ProgramNext56
+{
+	public static void Main()
+	{
+		
+	int powierzchnia = 100, osoby = 10;
+	double gestoscZaludnienia =  (double)osoby/powierzchnia;
+	Console.WriteLine(gestoscZaludnienia);
+	 
+	}
+}
+
+Odpowiedź : Nie dziala poniewaz mamy zmiennye typu "int" a wynik otrzymamy w innej postaci niz calkowitej
+dlatego nalezy zrzutować osoby na typ double z int by program dzialal prawidlowo.
+

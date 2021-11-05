@@ -1,0 +1,250 @@
+Zad 2.1
+using System;
+					
+public class ProgramFahrenheit
+{
+	public static void Main()
+	{
+		
+		double F, C;
+		Console.WriteLine("Podaj temp. w stopniach Fahrenheita");
+		C = double.Parse(Console.ReadLine());
+		F = 32.0+9/5*C;
+		Console.WriteLine(F);
+		Console.ReadKey();
+
+	}
+}
+
+
+Zad 2.2
+
+public class ProgramDelta
+{
+	public static void Main()
+	{
+		
+		
+		double a, b, c, delta, delta2;
+		Console.WriteLine("Podaj wspolczynniki a,b i c ");
+		a = double.Parse(Console.ReadLine());
+   	b = double.Parse(Console.ReadLine());
+    c = double.Parse(Console.ReadLine());
+		delta = b*b-4.0*a*c;
+		Console.WriteLine(delta);
+	  Console.ReadKey();
+		
+	
+	}
+}
+
+
+Zad 2.3
+
+public class ProgramBMI
+{
+	public static void Main()
+	{
+		
+		
+		double masa, wzrost, BMI;
+		Console.WriteLine("Podaj mase i wage ");
+		masa = double.Parse(Console.ReadLine());
+   	wzrost = double.Parse(Console.ReadLine());
+		BMI = masa/(wzrost*wzrost);
+		Console.WriteLine(BMI);
+	 	
+		
+	
+	}
+}
+
+
+Zad 2.4
+
+using System;
+
+public class ProgramNext2
+{
+	public static void Main()
+	{
+		
+		int x = 100;
+    Console.WriteLine(++x * 2);
+
+		Console.WriteLine(x);
+		
+	}
+}
+
+Odpowiedź  " a  "
+
+Zad 2.5
+
+public class ProgramNext1
+{
+	public static void Main()
+	{
+		
+		int x = 2, y = 3;
+ 		x *= y * 2;
+
+		Console.WriteLine(x);
+		Console.WriteLine(y);
+	
+	}
+}
+
+Odpowiedź "d"
+
+Zad 2.6
+
+using System;
+
+public class ProgramNext
+{
+	public static void Main()
+	{
+		
+		int x, y = 4;
+		x = (y -= 2);
+		x = y++;
+		x = y--; 
+
+		Console.WriteLine(x);
+		Console.WriteLine(y);
+	 	
+	}
+}
+
+Odpowiedz " x= 3, y= 2 "
+
+Zad 2.7
+
+public class ProgramNext3
+{
+	public static void Main()
+	{
+		
+		int x, y = 5;
+		x = ++y * 2;
+		Console.WriteLine(x);
+		Console.WriteLine(y);
+		Console.WriteLine("-------------");
+		x = y++;
+		Console.WriteLine(x);
+		Console.WriteLine(y);
+		Console.WriteLine("-------------");
+		x = y--;
+		Console.WriteLine(x);
+		Console.WriteLine(y);
+		Console.WriteLine(++y); 
+		Console.WriteLine("-------------");
+	 	
+	}
+}
+
+Odpowiedz : " wyswietli sie wartosc ++y, która wynosi 7 "
+
+Zad 2.8 
+
+public class ProgramNext4
+{
+	public static void Main()
+	{
+		
+		bool x;
+ 		int y = 1, z = 1;
+		 x = (y == 1 && z++ == 1);
+
+		Console.WriteLine(x);
+		Console.WriteLine(y);
+		Console.WriteLine(z);
+		Console.WriteLine("-------------");
+
+	}
+}
+
+Odpowiedz "a " 
+
+Zad 2.9 
+
+
+using System;
+
+public class ProgramNext
+{
+	public static void Main()
+	{
+		
+	int x = 1, y = 4, z = 2;
+	bool wynik = (x++ > 1 && y++ == 4 && z-- > 0);
+	Console.WriteLine("wynik={0} x={1} y={2} z={3}", wynik, x, y, z);
+		
+	Console.WriteLine("--------------------------------------");
+		
+	int x1 = 1, y1 = 4, z1 = 2;
+	bool wynik1 = (x1++ > 1 & y1++ == 4 && z1-- > 0);
+	Console.WriteLine("wynik={0} x={1} y={2} z={3}", wynik, x1, y1, z1);
+		
+	Console.WriteLine("--------------------------------------");
+  
+  
+  Zad 3.0 
+  
+  using System;
+
+public class ProgramNext56
+{
+	public static void Main()
+	{
+		
+	int powierzchnia = 100, osoby = 10;
+	double gestoscZaludnienia =  (double)osoby/powierzchnia;
+	Console.WriteLine(gestoscZaludnienia);
+	 
+	}
+}
+
+Odpowiedź : Nie dziala poniewaz mamy zmiennye typu "int" a wynik otrzymamy w innej postaci niz calkowitej
+dlatego nalezy zrzutować osoby na typ double z int by program dzialal prawidlowo.
+
+		
+	int x2 = 1, y2 = 4, z2 = 2;
+	bool wynik2 = (x2++ > 1 & y2++ == 4 & z2-- > 0);
+	Console.WriteLine("wynik={0} x={1} y={2} z={3}", wynik, x2, y2, z2);
+		
+	Console.WriteLine("--------------------------------------");
+
+	int x3 = 1, y3 = 3, z3 = 4;
+	bool wynik3 = (x3 == 1 || y3++ > 2 || ++z3 > 0);
+	Console.WriteLine("wynik={0} x={1} y={2} z={3}", wynik, x3, y3, z3);
+		
+	Console.WriteLine("--------------------------------------");
+
+	int x4 = 1, y4 = 3, z4 = 4;
+	bool wynik4 = (x4 == 1 | y4++ > 2 || ++z4 > 0);
+	Console.WriteLine("wynik={0} x={1} y={2} z={3}", wynik, x4, y4, z4);
+		
+	Console.WriteLine("--------------------------------------");
+
+	int x5 = 1, y5 = 3, z5 = 4;
+	bool wynik5 = (x5 == 1 | y5++ > 2 | ++z5 > 0);
+	Console.WriteLine("wynik={0} x={1} y={2} z={3}", wynik, x5, y5, z5);
+	
+	}
+}
+
+Odpowiedz : 
+
+wynik=False x=2 y=4 z=2                a
+--------------------------------------
+wynik=False x=2 y=5 z=2                b
+--------------------------------------
+wynik=False x=2 y=5 z=1                c
+--------------------------------------
+wynik=False x=1 y=3 z=4                d
+--------------------------------------
+wynik=False x=1 y=4 z=4                e
+--------------------------------------
+wynik=False x=1 y=4 z=5                f
